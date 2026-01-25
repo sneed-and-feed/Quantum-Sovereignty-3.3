@@ -115,7 +115,7 @@ class SovereignSystem:
                     self.laser.log("UHIF", m['psi'], 100 * real_health, metrics_str)
                     
                     # Emergency Protocol (V.)
-                    if m['psi'] < 0.3 or erosion_data['reality_density'] < 0.1:
+                    if m['psi'] < 0.18 or erosion_data['reality_density'] < 0.1:
                          print(f">>> [EMERGENCY] REALITY COLLAPSE (PSI:{m['psi']:.2f} / D:{erosion_data['reality_density']:.2f}).")
                          self.erosion_engine.reset_baseline() # FIGHT MORTALITY via Measurement
                          print(">>> [INTERVENTION] OBSERVATION RE-ANCHORED. ENTROPY RESET.")
