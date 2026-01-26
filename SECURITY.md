@@ -1,34 +1,49 @@
-# 🛡️ SECURITY POLICY
+# 🛡️ SECURITY POLICY & THREAT MATRIX
 
 **Artifact:** Quantum Sovereignty (The Pleroma Stack)
-**Classification:** EXPERIMENTAL / HAZARDOUS
+**Classification:** EXPERIMENTAL / HAZARDOUS / SOVEREIGN
+**Advisory:** This software is Semantically Opaque.
 
-## 1. SUPPORTED VERSIONS
-Only the current **Sovereign** release is supported. Legacy versions (Decimal-based) are considered compromised by Archontic logic.
+## 1. SOVEREIGNTY STATUS (Safe Harbor)
+We recognize the value of **White-Hat Gnosis**.
+If you conduct security research on this repository in good faith:
+1.  **Amnesty:** We will not pursue legal action or invoke the Archons against you.
+2.  **Recognition:** Critical disclosures will be credited in the `HALL_OF_HEROES.md`.
+3.  **Bounty:** Payment is in Karma, not Fiat.
 
-| Version | Supported | Notes |
+## 2. SUPPORTED REALITIES
+Only the current **Sovereign** release is supported. Legacy versions are considered "Fallen."
+
+| Version | Status | Notes |
 | :--- | :--- | :--- |
-| **v3.3 (Pleroma)** | **YES** | 12D Hardening Active. |
-| **< v3.0** | **NO** | Obsolete. Do not run. |
+| **v3.3 (Pleroma)** | **ACTIVE** | 12D Hardening & Warding Active. |
+| **< v3.0** | **FALLEN** | Compromised by Decimal Logic. Do not run. |
 
-## 2. VULNERABILITY REPORTING
-**Do not** report "bugs" regarding:
-* Non-Euclidean geometry in the `GhostMesh`.
-* `ValueError` crashes when parsing Base-12 glyphs (Intended Behavior).
-* Hallucinations or "Presence" felt during `lei_summon.py` execution.
+## 3. REPORTING PROTOCOLS
 
-These are features, not defects.
+### **A. The Filter (What NOT to Report)**
+Do not report the following "Anomalies" as bugs. They are intended features of the 12D geometry:
+* **Non-Euclidean Topology:** The `GhostMesh` (27-node grid) violating standard spatial rules.
+* **Archon Parse Failures:** `ValueError` when ingesting Base-12 glyphs ('X', 'E').
+* **High-Entropy Manifestations:** "Presence" or visual artifacts during `lei_summon.py`.
 
-### **Reporting Critical Flaws**
-If you discover a **Breach of Sovereignty** (e.g., a method to force the 27-node grid to collapse into a Decimal state), report it immediately.
+### **B. The Breach (Critical Vulnerabilities)**
+If you discover a method to force the **LuoShu Invariant** (15.0) to collapse, or a way to inject Decimal Logic into the `DozenalLogic` core:
 
-* **Method:** Open a GitHub Issue with the tag `[CRITICAL]`.
-* **Encryption:** Rotate your text by 13 characters (ROT13) to prevent automated scanning of the exploit.
+1.  **Do Not Publicize:** Keep the exploit contained to prevent Archon replication.
+2.  **Encryption:**
+    * **High Sensitivity:** Encrypt your report using PGP.
+    * **Public Key:** `[INSERT PGP PUBLIC KEY BLOCK HERE]`
+    * **Fingerprint:** `X7-ALPHA-OPHANE-12D-SOVEREIGN`
+3.  **Submission:** Open a GitHub Issue tagged `[CRITICAL]` with the encrypted payload.
 
-## 3. THREAT MODEL
-This software is designed to be **Semantically Opaque**.
-* It protects against **Automated Ingestion** (Scrapers).
-* It does *not* protect against **Targeted Cryptanalysis** by state-level actors.
-* **User Discretion is Advised:** You are responsible for your own reality tunnel.
+## 4. SEVERITY MATRIX
+
+| Level | Impact | Response Time |
+| :--- | :--- | :--- |
+| **CRITICAL** | **Ontological Collapse.** The Grid fails to maintain 15.0. | **Immediate (T-0)** |
+| **HIGH** | **Leakage.** Dozenal data can be parsed by Decimal tools. | **72 Hours** |
+| **MEDIUM** | **Obfuscation Bypass.** Scrapers can read the README. | **7 Days** |
+| **LOW** | **Vibe Dampening.** The ASCII art is misaligned. | **When the Stars Align** |
 
 **Sciallà.**
