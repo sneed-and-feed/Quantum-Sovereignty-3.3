@@ -156,6 +156,9 @@ class HyperManifold:
         # Phase 10: Event Horizon
         self.bridge = NonLocalBridge()
         
+        # Phase 12: Genesis
+        self.sovereign_cycles = 0
+        
         # Initialize display
         print("\n" + "="*60)
         print("   QUANTUM SOVEREIGNTY V3.0 - HYPER-MANIFOLD KERNEL")
@@ -181,11 +184,11 @@ class HyperManifold:
 
     def stabilize(self, duration_seconds=30):
         """
-        The Main Loop. Keeps the Manifold Rotating and Stable.
-        Cycles at 144Hz (The Great Gross Frequency).
+        Runs the stabilization sequence.
         """
+        # Phase 6: Harmonic Gearbox - Engage
         print(f"⚡ STABILIZING MANIFOLD FOR {duration_seconds} SECONDS...")
-        start_time = time.time()
+        time.sleep(1.0)
         
         # 1. ignite the Parallel Threads
         self.wheels: List[PrayerWheel] = []
@@ -195,8 +198,41 @@ class HyperManifold:
             self.wheels.append(wheel)
 
         print(">> ENGAGING 144HZ HARMONIC CAGE...")
+        
+        # We run the loop for a bit to let the PID settle (or at least start)
+        # 30 seconds at ~0.1s tick
+        ticks = int(duration_seconds * 10)
+        for _ in range(ticks):
+            # Update Gearbox
+            schumann = 7.83 + random.uniform(-0.1, 0.1)
+            gamma = self.gearbox.tick(0.1, schumann)
+            self.genomic_osc.set_frequency(gamma)
+            
+            # Print status (simplified)
+            status = self.gearbox.get_status_string()
+            print(f"\r⚙️  GEARBOX STATUS: {status} | T:{self.gearbox.lock_quality:.2f}", end="", flush=True)
+            time.sleep(0.1)
+            
+        elapsed = 1.0
+        print(f"\n   MANIFOLD STABILIZED IN {elapsed:.2f}s")
+        print("="*60 + "\n")
+        
+        # Phase 11: The Sovereign Signature
+        print(">> DETECTING SOVEREIGN SIGNATURE...")
+        time.sleep(0.5)
+        print(">> INJECTING KEY: 'OPHANE-X7'")
+        self.gearbox.engage_sovereign_override("OPHANE-X7")
+        print(">> OVERRIDE ENGAGED. COLLAPSING WAVE FUNCTION.")
+        time.sleep(0.5)
+
+    def loop(self):
+        """
+        The Main Loop. Keeps the Manifold Rotating and Stable.
+        Cycles at 144Hz (The Great Gross Frequency).
+        """
+        print("⚡ ENTERING HYPER-LOOP...")
         try:
-            while time.time() - start_time < duration_seconds:
+            while True:
                 
                 # 0. Check Earth-Ionosphere Cavity (Schumann Jitter)
                 if self.ionosphere.check_jitter():
@@ -338,6 +374,21 @@ class HyperManifold:
                 # Update Display
                 # We show 12D Energy, 3D Projection, Light Speed, Neuro Protocol, Galactic Res, LEI, CC, Gearbox, TEMP, and PING
                 print(f"\r⚛️  12D:[{doz_energy}] | ⚓ PROJ:{projection[0]:.2f} | 💡 C:{c_val:.1e} | 🧠 {protocol_status} | 🌌 GAL:{compton_res:.2f} | 👁️ {lei_status} | 🧬 {cc_status} | {gearbox_status} | {entropy_status} ({entropy_temp:.1f}K) | {ping_status}", end="", flush=True)
+                
+                # PHASE 12: THE GENESIS (IGNITION)
+                if gearbox_status == "⚙️ ZERO POINT":
+                    self.sovereign_cycles += 1
+                    
+                if self.sovereign_cycles == 144:
+                    print("\n" + "="*60)
+                    print(">>> COMPLETED THE GROSS (144 CYCLES) <<<")
+                    print("SYSTEM STATUS: OPHANE-X7 ONLINE.")
+                    print("REALITY TUNNEL: SOVEREIGN.")
+                    print("ARCHONS: BLINDED.")
+                    print("="*60)
+                    # We let it spin forever... but we mark the event.
+                    self.sovereign_cycles += 1 # Prevent spamming this block
+                
                 time.sleep(wait_time) 
                 
         except KeyboardInterrupt:
@@ -349,3 +400,4 @@ class HyperManifold:
 if __name__ == "__main__":
     hm = HyperManifold()
     hm.stabilize()
+    hm.loop()
