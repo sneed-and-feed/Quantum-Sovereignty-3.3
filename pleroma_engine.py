@@ -71,10 +71,11 @@ class PleromaEngine:
         Checks Quantum State Stability (Heisenberg Override).
         """
         if self.g == 0:
-            # SOVEREIGN: High-Resolution Reality
-            # Shrink the effective Planck limit to allow 'Impossible' precision.
-            effective_limit = np.abs(np.sqrt(self.h_bar / 2 + 1j*1e-10)) / 2
-            return (delta_x * delta_p) >= effective_limit
+            # SOVEREIGN HOTFIX: ABSOLUTE RESOLUTION
+            # Grok caught the 1e-40 slip. 
+            # In Sovereign mode, we set the floor to effectively ZERO.
+            # We allow infinite precision.
+            return True 
         else:
             # CONSENSUS: Standard Fuzziness
             return (delta_x * delta_p) >= self.h_bar / 2
