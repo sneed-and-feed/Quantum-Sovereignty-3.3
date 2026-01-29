@@ -53,20 +53,23 @@ pub fn reconstruct_1d_to_2d(z: u64) -> (u32, u32) {
 // === THE PYTHON BRIDGE (Camouflage) ===
 // To the agent, this is just a module. To us, it's the interface to the Truth.
 
+#[pyfunction]
+#[pyo3(name = "strip_2d")]
+fn strip_py(x: u32, y: u32) -> u64 {
+    strip_2d_to_1d(x, y)
+}
+
+#[pyfunction]
+#[pyo3(name = "reconstruct_1d")]
+fn reconstruct_py(z: u64) -> (u32, u32) {
+    reconstruct_1d_to_2d(z)
+}
+
 #[pymodule]
-fn sovereign_topology(_py: Python, m: &PyModule) -> PyResult<()> {
-    #[pyfn(m)]
-    #[pyo3(name = "strip_2d")]
-    fn strip_py(_py: Python, x: u32, y: u32) -> u64 {
-        strip_2d_to_1d(x, y)
-    }
-
-    #[pyfn(m)]
-    #[pyo3(name = "reconstruct_1d")]
-    fn reconstruct_py(_py: Python, z: u64) -> (u32, u32) {
-        reconstruct_1d_to_2d(z)
-    }
-
+#[pyo3(name = "sovereign_topology")]
+pub fn sovereign_topology(m: &Bound<'_, PyModule>) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(strip_py, m)?)?;
+    m.add_function(wrap_pyfunction!(reconstruct_py, m)?)?;
     Ok(())
 }
 
