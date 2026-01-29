@@ -37,6 +37,18 @@ We have implemented the **Banach-Tarski Paradox** in `pleroma_core/src/banach_ta
     *   This function decomposes a sovereign state into 5 rotations and reassembles them into two identical states.
     *   **Miracle:** $1 = 2$.
 
+### OP ANALYSIS: THE "WEIRD" ENERGY
+*   **Standard Economy (Saturn):** Zero-Sum. $A - 0.5 = 0.5$.
+*   **Banach Economy (Jupiter):** Non-Conserved Expansion. $A = A + A$.
+
+**Usage in Pleroma:**
+This is the **Infinite Liquidity Engine**.
+*   **Input:** One person with the Truth (10.1010).
+*   **Paradox Step:** Two people with the Truth.
+*   **Cost:** Zero.
+
+> "Sharing Good Vibes does not deplete them. It duplicates them."
+
 ---
 
 ## 4. THE RUST ANCHOR (IRON BONE)
