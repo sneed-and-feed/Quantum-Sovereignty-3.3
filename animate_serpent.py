@@ -82,45 +82,45 @@ def animate_serpent(size=64, interval=1, show_metrics=True):
     path_y = Y.flatten()[sort_idx]
     
     # 4. Setup Plot
-    # Adjusted figsize and width_ratios to ensure the main ax can be square
+    # Adjusted figsize and width_ratios for pixel-perfect square alignment
     fig, (ax_main, ax_metrics) = plt.subplots(
         1, 2, figsize=(15, 10), 
-        facecolor='#050505',
+        facecolor='#121212', # Balanced dark void
         gridspec_kw={'width_ratios': [1, 0.3]}
     )
     
-    ax_main.set_facecolor('#050505')
+    ax_main.set_facecolor('#121212')
     ax_main.set_title(
-        f"THE SERPENT COIL (g=0 Locality Map) | {size}x{size} | {phase_name.upper()} {icon}", 
-        color='#C4A6D1', fontsize=22, pad=45, # Enlarged and refined
-        fontproperties=cuneiform_font # FORCE SOVEREIGN FONT
+        f"THE SERPENT COIL (g=0 Locality Map) | {size}x{size}", 
+        color='#3B323F', fontsize=20, pad=25, # Dark Star Stuff Lavender
+        fontproperties=cuneiform_font
     )
-    # FORCED SQUARE ALIGNMENT: adjustable='box' ensures title centers over the square
+    # FORCED SQUARE ALIGNMENT: 'box' ensures title centers over the data area
     ax_main.set_aspect('equal', adjustable='box') 
     ax_main.set_xlim(-1, size)
     ax_main.set_ylim(-1, size)
     ax_main.axis('off')
     
-    # Ghost Points (High Density)
-    ax_main.scatter(X.flatten(), Y.flatten(), s=2, c='#0f0f0f', alpha=0.3)
+    # Ghost Points (Subtle Grain)
+    ax_main.scatter(X.flatten(), Y.flatten(), s=2, c='#1a1a1a', alpha=0.3)
     
     # The Serpent (Artists for blitting)
-    line, = ax_main.plot([], [], color='#C4A6D1', linewidth=0.8, alpha=0.7, animated=True)
+    line, = ax_main.plot([], [], color='#C4A6D1', linewidth=0.8, alpha=0.8, animated=True)
     
     # The Cursor
     cursor_color = '#ffffff' if illumination > 0.5 else '#8855aa'
     head, = ax_main.plot([], [], 'o', color=cursor_color, markersize=4, animated=True)
     
     # Metrics panel
-    ax_metrics.set_facecolor('#050505')
+    ax_metrics.set_facecolor('#121212')
     ax_metrics.axis('off')
     
     metrics_text = ax_metrics.text(
         0.0, 1.0, '', 
         transform=ax_metrics.transAxes,
-        color='#C4A6D1', fontsize=13, # Nicer, larger text
+        color='#C4A6D1', fontsize=12, 
         verticalalignment='top',
-        fontproperties=cuneiform_font, # FORCE SOVEREIGN FONT
+        fontproperties=cuneiform_font,
         animated=True
     )
     
@@ -201,7 +201,7 @@ Bijection:   VERIFIED
     
     # OUTPUT: Save the final coil state
     filename = "sovereign_serpent_coil.png"
-    fig.savefig(filename, facecolor='#050505', dpi=300)
+    fig.savefig(filename, facecolor='#121212', dpi=300)
     print(f"    >>> RITUAL SAVED: {filename}")
     
     print(f"    >>> TIMELINE COMPLETE.")
