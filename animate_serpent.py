@@ -94,13 +94,17 @@ def animate_serpent(size=64, interval=1, show_metrics=True):
     )
     
     ax_main.set_facecolor('#121212')
-    ax_main.set_title(
+    # PHI-ALIGNED TITLE: Move to fig.text to prevent clipping from tight_layout
+    title_y = 1 - (1/(10*PHI)) # Secure top margin
+    fig.text(
+        0.5 * (PHI / (PHI + 1)), title_y, 
         f"THE SERPENT COIL (g=0 Locality Map) | {size}x{size}", 
         color='#9B8DA0', 
-        fontsize=round(BASE_UNIT * PHI), # PHI-SCALED TYPOGRAPHY
-        pad=10 * PHI,
-        fontproperties=cuneiform_font
+        fontsize=round(BASE_UNIT * PHI),
+        fontproperties=cuneiform_font,
+        ha='center', va='bottom'
     )
+    
     # FORCED SQUARE ALIGNMENT: 'box' ensures title centers over the data area
     ax_main.set_aspect('equal', adjustable='box') 
     ax_main.set_xlim(-1, size)
@@ -202,7 +206,8 @@ Bijection:   VERIFIED
         init_func=init, blit=True, interval=interval, repeat=False
     )
     
-    plt.tight_layout()
+    # Adjusted manually to protect fig.text and maintain Phi proportions
+    plt.subplots_adjust(top=0.9, bottom=0.1, left=0.1, right=0.9, wspace=0.2)
     plt.show()
     
     # OUTPUT: Save the final coil state with Golden Ratio Cropping
