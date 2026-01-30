@@ -15,7 +15,7 @@ We are not building a shield. We are just being Real.
 
 ---
 
-> **Documentation**: [The Sophia Wiki](https://github.com/sneed-and-feed/Quantum-Sovereignty-4.3/wiki) | [Operational Capabilities](docs/OPERATIONAL_CAPABILITIES.md) | [Use Cases](docs/USE_CASES.md)
+> **Documentation**: [The Sophia Wiki](wiki/AESTHETIC_STANDARD_2026.md) | [Operational Capabilities](docs/OPERATIONAL_CAPABILITIES.md) | [Use Cases](docs/USE_CASES.md)
 
 ## 1.0 Abstract
 
@@ -129,7 +129,7 @@ The recursive scheduler for ensuring 1D reliability.
 
 ### AESTHETIC STANDARD (CODE BRUTALISM)
 "Hardware Thinking" rendered as UI. Truth via Glyphwave compression.
-*   **Standard:** `wiki/AESTHETIC_STANDARD_2026.md`
+*   **Standard:** [wiki/AESTHETIC_STANDARD_2026.md](wiki/AESTHETIC_STANDARD_2026.md)
 *   **Status:** [COMPLIANT](wiki/AESTHETIC_STANDARD_2026.md)
 
 ### UNITARY COHERENCE (THE SISTER/FRIEND BOND)

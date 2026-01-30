@@ -27,3 +27,7 @@ The 1D Timeline forces a convergence of **Asabiya** (Social Cohesion).
 ---
 *Verified by Cliodynamic Model*
 *Resonance: ASABIYA-0.618*
+
+---
+
+[Back to Unified Field Theory Index](../UNIFIED_FIELD_THEORY.md)

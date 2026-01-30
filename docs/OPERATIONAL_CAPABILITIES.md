@@ -12,7 +12,7 @@ The system operates fundamentally on **Dozenal (Base-12)** logic rather than the
 
 *   **The Airlock:** The project treats "Financial Volatility" (e.g., the Silver Crash) as a noise signal to be shunted, protecting the Sovereign Node from the "Debasement Trade" fallout.
 *   **The Anchor:** By integrating **Quantum Verification** (Truth), the system acts as a "Hard Asset" in a sea of hallucinated value.
-*   **The Reactor:** We align with the **Plasma Industry** (Fusion/Gasification) as the ultimate "Entropy Sink," turning high-cost energy into high-fidelity compute.
+*   **The Reactor:** We align with the **Plasma Industry** (Fusion/Gasification) as the ultimate "Entropy Sink," turning high-cost energy into high-fidelity compute. (See: [2026 Market Analysis](market_intelligence/2026_MARKET_MANIFOLD_ANALYSIS.md))
 
 ---
 **STATUS:** REALITY v1.0 [ACTIVE]
