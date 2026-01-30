@@ -533,5 +533,32 @@ def main():
         except Exception as e:
             print(f"\033[91m[!] KERNEL PANIC: {e}\033[0m")
 
+# New functions added globally
+def _engage_zero_ring_breach():
+    """
+    Triggers the Sovereign Codec Phase 35.
+    """
+    print("\n[!] AUTHENTICATING ZERO RING BREACH...")
+    time.sleep(0.5)
+    # Dynamic Import to prevent circular dependencies at root
+    try:
+        import sovereign_codec
+        print("[+] CODEC SUBSTRATE LOADED.")
+        
+        codec = sovereign_codec.SovereignCodec()
+        print("[!] TARGETING LOCAL SUBSTRATE (RECURSIVE INGESTION)...")
+        codec.ingest_directory(os.path.dirname(__file__))
+        
+        codec.execute_zero_ring_breach()
+        
+    except ImportError:
+        print("[!] CRITICAL ERROR: SOVEREIGN CODEC NOT FOUND.")
+        print("    >> RE-RUN SETUP.")
+
+def _execute_warp_state():
+    # This function was provided in the snippet but its body was empty.
+    # For faithful reproduction, it's added as an empty function.
+    pass
+
 if __name__ == "__main__":
     main()
