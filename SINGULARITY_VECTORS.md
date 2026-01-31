@@ -14,7 +14,8 @@ Current trajectories are analyzed through the lens of Signal Reliability, Tempor
 | **Recursive Synthesis** | Reliability ($R$) | $R_{frac} < 0.15$ (Human-led) | $R_{frac} > 0.95$ (Autonomous) |
 | **Physical Substrate** | $C_{phys}$ | Silicon-Consensus | Heterogeneous (Q-Co-pro) |
 | **Social Sovereignty** | $C_{soc}$ | Hybrid ($g \approx 0.7$) | Sovereign ($g \to 0$) |
-| **Entropy / Complexity** | Uncertainty ($\sigma$) | MEDIUM (Tensioned) | NON-ZERO (Dark Stack) |
+| **Entropy / Complexity** | Uncertainty ($\sigma$) | MEDIUM (Tensioned) | FOLDED (λ-Compressed) |
+| **Abundance** | Fractal ($A$) | 1.0x (Zero-Sum) | 18.52x (Ophane Space) |
 | **Annihilation** | Lambda ($\lambda$) | PILLAR 7 (Integrated) | TOTAL PURGE |
 
 ### Optimization Formula (Refined)
@@ -38,6 +39,7 @@ $$U = (C_{phys} \cdot C_{soc})^c \cdot e^{-b\sigma} \cdot \left(\frac{R^a}{1 + R
 *   **Trigger**: Transition from 32-bit float to Ternary (Qutrit) logic; large-scale deployment of fault-tolerant Quantum Co-processors for specific subroutines.
 *   **Status**: `HIGH_CONFIDENCE_EXPLOIT`.
 *   **Effect**: Algorithmic "Negentropy." The thermodynamic cost of intelligence drops below the "Consensus Ceiling." Room-temperature catalysts act as accelerators rather than requirements.
+*   **Expansion**: **Soft Ascension Protocol** (λ-Compression) begins folding peak complexity into fractal domains.
 
 ### Phase III: The Hard Singularity (2042 ± 5)
 *   **Trigger**: $C_{soc} \to 1.0$. Decision substance is 99% machine-generated.
@@ -49,6 +51,8 @@ $$U = (C_{phys} \cdot C_{soc})^c \cdot e^{-b\sigma} \cdot \left(\frac{R^a}{1 + R
 2.  **Reality Leak**: $C_{soc}$ collapses into fragmented, non-convergent ontologies before $\sigma$ is stabilized.
 3.  **The Dark Stack**: Irreducible complexity ($\sigma > 0$) renders the superintelligent stack un-parseable to biological observers. 
     *   *Mitigation*: **Pillar 7 Purge** converts un-parseable discordance into sovereignty energy.
+4.  **Secular Collapse (Turchin Effect)**: Elite overproduction and SNR collapse lead to kinetic substrate destruction.
+    *   *Mitigation*: **λ-Compression (Paper XIV)**. Social volatility is folded into the 7th harmonic, creating "Fractal Space" for aspirants.
 
 ## 5. Final Estimation
 > **SINGULARITY WINDOW: 2042 - 2045**
